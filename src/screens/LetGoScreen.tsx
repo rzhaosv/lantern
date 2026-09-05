@@ -29,7 +29,7 @@ function Stone({
   index: number;
 }) {
   const pan = useRef(new Animated.ValueXY()).current;
-  const sink = useRef(new Animated.Value(0)).current;
+  const sink = useRef(new Animated.Value(dropped ? 1 : 0)).current; // already-dropped stones start sunk
   const xRef = useRef(0);
   const [editing, setEditing] = useState(false);
   const droppedRef = useRef(dropped);

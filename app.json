@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Lantern",
+    "slug": "lantern",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "lantern",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0E0B1F",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.formaz.lantern",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "Lantern sends one optional daily reminder when your seven quiet minutes are ready, at the time you choose.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.formaz.lantern",
+      "adaptiveIcon": {
+        "backgroundColor": "#0E0B1F",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#F5C26B"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0E0B1F"
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "owner": "raymondzhao3000",
+    "extra": {
+      "eas": {
+        "projectId": "1a4a483e-0ed0-4fe5-9ba5-b19cfd09f10c"
+      }
+    }
+  }
+}
